@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CNC Consent Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #fff; color: #000; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input, textarea { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
+    button { margin-top: 20px; padding: 10px 20px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+  <h1>CNC Consent Form</h1>
+  <form action="http://149.28.230.82/send.php" method="POST">
+
+    <label>Dominant Name:</label>
+    <input type="text" name="dominant_name" required>
+
+    <label>Submissive Name:</label>
+    <input type="text" name="submissive_name" required>
+
+    <label>Scene Date:</label>
+    <input type="date" name="scene_date" required>
+
+    <label>Location:</label>
+    <input type="text" name="location">
+
+    <label>Safeword:</label>
+    <input type="text" name="safeword">
+
+    <label>Hard Limits:</label>
+    <textarea name="hard_limits" rows="4" required></textarea>
+
+    <label>Permitted Acts:</label>
+    <textarea name="acts" rows="4"></textarea>
+
+    <label>Aftercare Plan:</label>
+    <textarea name="aftercare" rows="4"></textarea>
+
+    <label>Your Email (will receive a copy):</label>
+    <input type="email" name="email" required>
+
+    <button type="submit">Submit Consent Form</button>
+  </form>
+
+</body>
+</html>
